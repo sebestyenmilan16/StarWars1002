@@ -2,7 +2,10 @@ import  javax.json.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+
+        String filmsJson = SwapiService.getFilmsJson("https://swapi.info/api/films");
+        System.out.println(filmsJson);
 
 
 
